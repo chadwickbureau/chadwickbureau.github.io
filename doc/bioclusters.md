@@ -2,6 +2,8 @@
 title: Bioclusters: How the Register documents people's careers
 ---
 
+## Bioclusters: How the Register documents people's careers
+
 The objective of the Register is to organise data documenting people's
 careers in baseball. A central research question is how many people fall
 within the Register's scope, of having played, managed, or umpired in a
@@ -104,7 +106,7 @@ form that can be processed. These sources vary widely in their coverage
 (and accuracy), but can provide important leads to a person's activities
 that allow linkage to other records.
 
-* _Public and administrative records*_. These include birth and death
+* _Public and administrative records_. These include birth and death
 certificates, military service records, Social Security records, Census
 records, and similar items, which we bundle together into a collection
 we refer to (slightly inaccurately) as 'vitals'. These often aren't
@@ -188,26 +190,26 @@ practice.
 
 **An example match**. We have this obituary on file:
 
-	\[obituaries:202005\_050\] Bruder, Henry J. \[Hank\]
+	[obituaries:202005_050] Bruder, Henry J. [Hank]
 	birth 1930-04-17 @ US/IL/LaSalle
 	death 2003-03-28 @ US/IL/Genoa
 	highschool St. Bede Academy @ US/IL/Peru
 
 In our findagrave files we have this record
 
-	\[findagrave:0080\] Bruder, Henry J. \[Hank\]
+	[findagrave:0080] Bruder, Henry J. [Hank]
 	sameas findagrave:135294367
 	birth 1930
 	death 2003
 	burial St. Catherine Cemetery @ US/IL/Genoa
 
 These (almost certainly!) refer to the same person. So, we record a link
-indicating that `obituaries:202005\_050` and `findagrave:0080` the **same**
+indicating that `obituaries:202005_050` and `findagrave:0080` the **same**
 person.
 
 **An example non-match**. We have this obituary on file:
 
-	\[obituaries:202002\_008\] Barton, Larry, Jr.
+	[obituaries:202002_008] Barton, Larry, Jr.
 	birth 1939-10-11 @ US/CA/Los Angeles
 	death 2020-02-06 @ US/KY/Louisville
 	highschool Gardena HS @ US/CA/Gardena
@@ -215,7 +217,7 @@ person.
 
 In our findagrave files we have this record
 
-	\[findagrave:0091\] Barton, Larry, Sr.
+	[findagrave:0091] Barton, Larry, Sr.
 	sameas findagrave:73500111
 	birth 1912-11-21 @ US/CO/Pueblo
 	death 1992-03-05
@@ -223,7 +225,7 @@ In our findagrave files we have this record
 	burial Maple Park Cemetery @ US/MO/Springfield
 
 These of course refer to different people (father and son in this case).
-So we record a link indicating that `obituaries:202002\_008` and
+So we record a link indicating that `obituaries:202002_008` and
 `findagrave:0091` are **different** people. Recording when we have records
 referring to definitely different people is useful, because it keeps us
 from revisiting the same comparison.
@@ -231,20 +233,20 @@ from revisiting the same comparison.
 **An example unknown**. It's also possible that we can't be sure whether
 two records do or don't refer to the same person. We have an obituary:
 
-	\[obituaries:202104\_016\] Fleming, Francis F.
+	[obituaries:202104_016] Fleming, Francis F.
 	death 1947-07-05 @ US/MA/Cochituate
 	burial St. Joseph Cemetery @ US/MA/West Roxbury
 
 And we also have a birth record:
 
-	\[vitals:202104\_006\] Fleming, Francis Fredrick
+	[vitals:202104_006] Fleming, Francis Fredrick
 	birth 1911-05-01 @ US/MA/Brookline
 
 It's true these *probably* refer to the same person, but there isn't
 enough to go on there to be certain. It could easily be another pere et
 fils case as with the Bartons, for instance. In this case, we would
 record a link indicating it is **unknown** whether
-`obituaries:202104\_016` and `vitals:202104\_006` are the same person or
+`obituaries:202104_016` and `vitals:202104_006` are the same person or
 different people. It is again useful to record comparisons where we
 don't have enough information to confirm or refute a match, because it
 saves us from revisiting them.
@@ -280,20 +282,20 @@ from the previous section. Although we marked the link between the
 obituary and the birth record as unknown, it does turn out they do refer
 to the same person. We have a findagrave entry:
 
-	\[findagrave:502\] Fleming, Francis F.
+	[findagrave:502] Fleming, Francis F.
 	sameas findagrave:171956740
 	birth 1911
 	death 1947
 	burial St. Joseph Cemetery @ US/MA/West Roxbury
 
 From this, we definitely *can* say that `findagrave:502` and
-`obituaries:202104\_016` are the **same** person, and `findagrave:502` and
-`vitals:202104\_006` are the **same** person. From that, we can logically
-infer that in fact `obituaries:202104\_016` and `vitals:202104\_006` are the
+`obituaries:202104_016` are the **same** person, and `findagrave:502` and
+`vitals:202104_006` are the **same** person. From that, we can logically
+infer that in fact `obituaries:202104_016` and `vitals:202104_006` are the
 same person.
 
 We don't go back and change the **unknown** link we recorded between
-`obituaries:202104\_016` and `vitals:202104\_006``. We wouldn't want to do
+`obituaries:202104_016` and `vitals:202104_006`. We wouldn't want to do
 that, because it would change the chain of reasoning we're doing on
 Fleming; but also it would be very tedious! Fortunately, we don't have
 to, because the chain of logic we just did in the previous paragraph can
@@ -302,9 +304,9 @@ the **same** links we record, and creates groups of records, such that
 any two records in a group have such a chain of **same** links between
 them, and two records in different groups do NOT have any chain of
 **same** links between them.[^3] We call such a group of records a
-**biocluster**. In this example, `findagrave:502``, `obituaries:202104\_016``,
-and `vitals:202104\_006` would be placed in one biocluster, and, for
-example, `findagrave:0080` and `obituaries:202005\_050` would be placed in a
+**biocluster**. In this example, `findagrave:502`, `obituaries:202104_016`,
+and `vitals:202104_006` would be placed in one biocluster, and, for
+example, `findagrave:0080` and `obituaries:202005_050` would be placed in a
 different biocluster.
 
 At this point it is worth remarking that the algorithm to construct
@@ -329,12 +331,12 @@ identifier that, to the extent possible, always will refer to the "same"
 person.
 
 Let's continue with the Fleming example. As it so happened, when we
-started, we had `obituaries:202104\_016` and `findagrave:502`, and a
+started, we had `obituaries:202104_016` and `findagrave:502`, and a
 **same** link between them. When we ran the clustering algorithm, it
 created a new biocluster containing those two records.
 
 When new clusters are created consisting entirely of new records, the
-algorithm assigns an identifier; in this case `SGQN-H677/1``. The part
+algorithm assigns an identifier; in this case `SGQN-H677/1`. The part
 before the slash is the part of the identifier that is intended to be
 persistent. It is generated randomly, and consists of two groups of four
 characters selected from letters excluding A, E, I, O, and U and the
@@ -342,13 +344,13 @@ digits 3 through 9.[^4] This gives us 377,801,998,336 possible
 biocluster names. The part after the slash is a version number; this is
 the first version of this biocluster, so it is given number 1.
 
-Now, subsequently we recorded his birth record vitals:2020104\_006 and
+Now, subsequently we recorded his birth record `vitals:2020104_006` and
 linked it to the findagrave record. The next time the clustering was
 done, it produced a biocluster of the three records. "Common sense"
 tells us that it would be desirable for this new biocluster to be
 thought of as referring to the "same" person. The algorithm assigns this
-biocluster the identifier `SGQN-H677/2``, that is, version 2 of biocluster
-`SGQN-H677``. This gives us a way of establishing continuity: It's
+biocluster the identifier `SGQN-H677/2`, that is, version 2 of biocluster
+`SGQN-H677`. This gives us a way of establishing continuity: It's
 meaningful to think of `SGQN-H677` as being Francis Fleming's "person ID"
 in the system, while at the same time we can track when the underpinning
 set of information on him changes.
@@ -398,25 +400,25 @@ entry is matched to at most one biocluster.
 For example, Francis Fleming's biocluster `SGQN-H677/2` contained these
 three records:
 
-	\[vitals:202104\_006\] Fleming, Francis Fredrick
+	[vitals:202104_006] Fleming, Francis Fredrick
 	birth 1911-05-01 @ US/MA/Brookline
 
-	\[findagrave:502\] Fleming, Francis F.
+	[findagrave:502] Fleming, Francis F.
 	sameas findagrave:171956740
 	birth 1911
 	death 1947
 	burial St. Joseph Cemetery @ US/MA/West Roxbury
 
-	\[obituaries:202104\_016\] Fleming, Francis F.	
+	[obituaries:202104_016] Fleming, Francis F.	
 	death 1947-07-05 @ US/MA/Cochituate
 	burial St. Joseph Cemetery @ US/MA/West Roxbury
 
 This biocluster is matched to the corresponding Register entry, which is
-`f9f87efb``. In doing so, a composite of the information in the sources is
+`f9f87efb`. In doing so, a composite of the information in the sources is
 made, and the composite information appears in the Register.
 Conceptually it would look like this:
 
-	\[f9f87efb\] Fleming, Francis Fredrick
+	[f9f87efb] Fleming, Francis Fredrick
 	sameas findagrave:171956740
 	birth 1911-05-01 @ US/MA/Brookline
 	death 1947-07-05 @ US/MA/Cochituate
