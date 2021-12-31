@@ -27,13 +27,32 @@ people in the Register, and linking them to other activities.
 The informal **Lee Allen group** contributes to the Register by finding, indexing,
 and matching records from sources outside the game to entries in the Register.
 They look for records on baseball people in sources including:
-* Obituaries and newspaper death notices (including those reported to
-  the Baseball Necrology e-group);
-* Birth and death indices, Social Security records,
-  draft registration cards and military records, and other public records;
-* Entries in findagrave.com;
-* Entries on imdb.com;
-* Records in databases from other sports.
+
+* _Obituaries and death notices_. We maintain a file of references,
+and full text where possible, on obituaries and death notices relating
+to the passing of baseball people, thanks especially to the
+BaseballNecrology e-group. These are semi-structured data, which require
+the skills of a human researcher to extract the essential data into a
+form that can be processed. These sources vary widely in their coverage
+(and accuracy), but can provide important leads to a person's activities
+that allow linkage to other records.
+
+* _Public and administrative records_. These include birth and death
+certificates, military service records, Social Security records, Census
+records, and similar items, which we bundle together into a collection
+we refer to (slightly inaccurately) as 'vitals'. These often aren't
+conclusive on their own, because few explicitly mention baseball as an
+occupation, but can often be linked usefully to other records.
+
+* _Entries on findagrave.com_. We maintain an index of findagrave memorial records.
+These are also quite useful alongside obituaries and death notices. We
+do use this information with caution, as its user-contributed nature
+means it does not have the same fact-checking as other sources might.
+For instance, there are many cases in which findagrave contributors have
+copied Register information into a findagrave memorial (usually via
+Baseball-Reference). These records are most helpful in distinguishing
+different people from each other.
+
 
 ## Progress and data quality
 

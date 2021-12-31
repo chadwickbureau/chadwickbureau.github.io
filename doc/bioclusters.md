@@ -87,66 +87,8 @@ the integration of several types of sources. Much of our research
 activity involves systematically curating these sources and transcribing
 the relevant information into a structured format.
 
-
-* _Individual career profiles_. These are capsule career summaries,
-usually focused on playing and/or managing activity, which provide basic
-biographical detail on people as well as their activities either over
-their whole career or up to a point in time. These include those which
-appear in official sources such as team media guides and organisational
-record books. Many also appear in third-party registers and
-encyclopedias. These are also compiled retrospectively by researchers,
-either individually or as part of collections.
-
-* _Obituaries and death notices_. We maintain a file of references,
-and full text where possible, on obituaries and death notices relating
-to the passing of baseball people, thanks especially to the
-BaseballNecrology e-group. These are semi-structured data, which require
-the skills of a human researcher to extract the essential data into a
-form that can be processed. These sources vary widely in their coverage
-(and accuracy), but can provide important leads to a person's activities
-that allow linkage to other records.
-
-* _Public and administrative records_. These include birth and death
-certificates, military service records, Social Security records, Census
-records, and similar items, which we bundle together into a collection
-we refer to (slightly inaccurately) as 'vitals'. These often aren't
-conclusive on their own, because few explicitly mention baseball as an
-occupation, but can often be linked usefully to other records.
-
-* _Findagrave_. We maintain an index of findagrave memorial records.
-These are also quite useful alongside obituaries and death notices. We
-do use this information with caution, as its user-contributed nature
-means it does not have the same fact-checking as other sources might.
-For instance, there are many cases in which findagrave contributors have
-copied Register information into a findagrave memorial (usually via
-Baseball-Reference). These records are most helpful in distinguishing
-different people from each other.
-
-* _Sporting News contract cards_. This large resource on LA84 is
-impressive in size and an important resource. Our experience with it is
-that the data quality on these cards is irregular, across people and
-across eras. People frequently have multiple cards, or one card confuses
-the careers of two or more roughly contemporaneous people. Also despite
-their name, it appears that cards prior to some point around 1930 were
-primarily compiled retrospectively, and seem to be more of an index of
-mentions in The Sporting News than a true list of transactions. They
-remain impressive however given the sheer size of the dataset and the
-fact they all had to be maintained by hand. These are therefore a useful
-resource for us in establishing identity, especially for cards which do
-list a date and/or place of birth (which is many but far from all),
-which we use alongside 'external' resources like obituaries and public
-records for historical people.
-
-* _Other sources_. We do also collect full name and date of birth
-information from other published sources, although these are quite
-scattered. Most of these come from rosters, whether official rosters
-from leagues or clubs, or rosters as presented in newspapers. Historical
-rosters rarely list full dates of birth, but often do list (supposed)
-ages, which allows us to estimate a date of birth within a year based on
-age and date of publication of the document. We also are looking for
-other similar systematic sources to compile: the **Weiss
-questionnaires** now on Ancestry.com are of particular interest for
-someone to assist in compiling a comprehensive index of.
+You can read more about our current priorities and progress on some
+of these key sources in our [page describing our historical data](/doc/historical).
 
 These sources have often complementary strengths and weaknesses; used
 together they allow us to get a fairly accurate picture of basic
