@@ -123,7 +123,7 @@ We have a number of career profiles of individual people which several researche
 have generously provided to us.  For example, Bob McConnell allowed us in 2008
 to scan [his profiles of over 1300 major and minor league players](https://www.dropbox.com/sh/rntugcqba320uau/AAAVXoRuZ87axOS2R8MvMvr1a?dl=0).
 Reed Howard, our 19th century stalwart researcher, has produced an
-[extensive register of people from baseball's earlier years](../reports/howard).
+[extensive register of people from baseball's earlier years](/reports/howard).
 Likewise, similar types of career profiles appear in official media guides produced
 by teams and leagues.
 
@@ -148,7 +148,7 @@ especially as regards full names, dates and places of birth, and schools attende
 ### Data from outside baseball: The Lee Allen group
 
 Running in parallel to these, we are working with what we call the
-[Lee Allen group](leeallen).  This is an informal network of researchers who collect
+[Lee Allen group](/doc/leeallen).  This is an informal network of researchers who collect
 data on baseball people using sources from outside baseball, including obituaries, vital
 records, and the like.  This group is responsible for reporting the passings of former
 players and personnel in near-real time.  In addition, once we have linked contract cards,
