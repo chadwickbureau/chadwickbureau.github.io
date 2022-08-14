@@ -1,16 +1,18 @@
 ---
-title: About our historical data
+title: About historical minor league data
 ---
 
-The origin of our data on professional baseball outside of the Major Leagues is a 
-mashup of a number of secondary datasets produced over the years by various researchers.
-In most cases, these datasets focused on information of interest to the researcher,
-and therefore focused on particular leagues, people, and/or types of information.
+At the moment, the data on professional baseball outside of the Major Leagues, as seen,
+for example, on baseball-reference.com, is a mashup which combines a  number of secondary
+datasets produced over the years by various researchers.
+Most of these datasets focused on information of interest to the researcher,
+and therefore their coverage was targeted to particular leagues, people, and/or types of
+information.
 By combining them, we have been able to produce a first cut at an encyclopedic
 dataset which has broad coverage of much of baseball history.
 
 The resulting mashup is useful, but very incomplete.  The limited scope of each
-individual secondary dataset means there are many gaps in coverage.
+individual secondary dataset means there are many, many gaps in coverage.
 Furthermore, because the datasets were produced to solve a particular need for
 the researcher, and not necessarily to be part of a systematic encyclopedia,
 information on the provenance of specific datapoints varies significantly across
@@ -21,49 +23,52 @@ in our data, it is difficult to say whether this is because the information
 was not ever recorded, or simply was not recorded in one of the secondary
 datasets.
 
-We have therefore constructed a strategy for developing the dataset into
-a truly encyclopedic resource with both depth and breadth.
-In contrast to our underpinning secondary datasets, which are generally topic-organised,
-we organise our work by **source**.  That is to say, when we work with a given source,
-we extract and index **all** of the information present in the source.
-Because we want our dataset to be comprehensive, this is a very efficient way of
-ingesting data.  The trade-off is that, in general, we do not go in search of
-trying to "fill in" a given data point.  For example, if we do not have a date of
-birth for Joe Shlabotnik, we don't in general go trying to find it; instead, we
-systematically index sources (such as, for example, media guides or official rosters),
-and at some point we are likely to find Shlabotnik's birthday if it was recorded
-somewhere.
+We are now building a new, comprehensive dataset covering the history of
+professional baseball.
+We find ourselves in a situation that is quite similar to that faced by ICI
+when they started to produce the dataset that became the original Macmillan
+Baseball Encyclopedia, and we are following a strategy which in many ways is
+the same as the one they adopted.
+We are going back to the most primary sources we can find, and building a
+new dataset "from scratch," where each datapoint is traceable back to
+a source.
+Of course, we are benefitting greatly from the massive progress that has been
+made in computer hardware, and in software for organising, transforming, and
+merging large datasets, in the half a century since the Macmillan
+appeared, but in many ways our research principles and strategy would
+be instantly recognisable to anyone who worked on the Big Mac.
 
-Working in this way has several benefits:
-* It naturally produces a form of audit trail that allows us to trace every
-  piece of information we add to its source.  We have a [separate semi-technical
-  introduction](bioclusters) which describes how we link together references
-  to the same person from different sources to build up their profile in our
-  data.
-* We can work efficiently by knowing which sources have been used, and which have
-  not.  If we looked only for information of a given type, we might wind up
-  consulting the same source many times over - or we might not realise that a
-  source contains other useful information.  We've found that it is not uncommon
-  for a piece of information in a source to turn out to be a useful clue in
-  confirming or linking information in other sources.
-  
-As a result of our approach, we do not think of ourselves as making "changes" or
-"revisions" to our data.  Rather, what we are doing is **replacing** the data
-which originates from the underpinning secondary sources, with data produced
-more systematically from primary sources.  We do this in a way that maintains
-continuity, so from the perspective of data users, information simply becomes
-gradually more complete over time.  However, what is more important - even if
-less visible - is that over time our data is becoming more and more
-**reproducible**, that is, traceable from original sources.  This is what is
-essential for ensuring data quality.
+One important difference between the late 1960s and today is that dissemination
+of data is so much faster.
+Although the Macmillan Encycloepdia was famously the first book to be typeset
+by computer, it took hours to do the typesetting, and of course the only way
+to disseminate the information was by printing physical books.
+Today, we are able to update websites in minutes, or seconds, and people
+can interact with the data in a variety of ways.
+Therefore, unlike ICI, we do not need to wait to complete our work to publish
+it; rather we can disseminate new information on a rolling basis.
 
-## Our plans for 2022
+To accomplish this in an efficient fashion, we have developed a structured
+approach to building our new dataset.  We organise our work into well-defined
+blocks, and when each block is ready, it is merged into the dataset and
+disseminated.  We do this in a way that maintains continuity for all of
+the identifiers associated with people, leagues, teams, and so on, so
+this updating process should largely be transparent to users: over time, the
+quality of the data simply gets better.  The way to think about this
+process is that we are not "changing" or "editing" the legacy mashup
+data; we are **replacing it block by block**, with a new dataset that is
+built directly from sources, and that we are able to improve iteratively
+going forward as we incorporate new sources of information.
 
-We have several lines of work in progress in which we are systematically working
-through several key types of sources.  Here is what we expect will happen as
-2022 progresses.
 
-### League statistics
+# Our strategy
+
+To produce a dataset of this size efficiently requires having a good way
+of organising work into coherent blocks we can use to replace chunks of
+existing information.  We provide below a high-level outline of our strategy.
+
+
+## League statistics
 
 We work with a given league-season as the unit of statistical compilation.
 Most of the historical statistics in the original mashup came from an impressive
@@ -80,75 +85,66 @@ on what was published by adding missing players (including "less-thans"),
 additional statistical detail, or correcting errors in statistical tabulation or
 person names.
 
-As of the start of 2022, we have completed all leagues from 1953 forward,
-with the exception of a small number of leagues in 1953 and 1954, and some
-leagues based in Mexico which were part of the National Association.
-At our current rate of progress, we anticipate that by the end of 2022 we will
-complete the "replacement" of statistics with more systematically-built versions
-for all leagues from the early 1940s to present.
-
-### Linking Sporting News contract cards
-
-The _Sporting News_ contract cards, available on the LA84 Foundation's website,
-are proving to be a useful resource.  The cards contain interesting data ranging
-roughly from 1920 to 1980, with some limited or sketchy information in the 1910s,
-and cards for most Major League players prior to 1920.
-
-The content of the cards varies widely.  Some players who played just a few minor
-league games (or were signed but never played at all) have very complete information,
-while many with significant minor league careers have little information beyond
-their name and a list of transactions.  We are finding that a majority of the cards
-do have some information which is useful for improving our data quality.
-
-We are working through indexing these systematically, one card at a time.  This is much more
-efficient than trying to search for a card matching a Register entry.  The OCR of
-the cards is quite good, but the search facility on LA84 looks for exact word
-matches only; therefore, it would be difficult to find a card if the OCR was not
-accurate, or if a name was spelled differently on the card.
-The cards are also not organised chronologically.
-
-Because of the breadth of coverage of this source, we are making matching cards
-to Register people a high priority.  However, because the cards are not organised
-chronologically, the improvements to data quality will be incremental and scattered
-across the decades.
-
-This is a large project that will take several years to complete.  In the meanwhile,
-as we match cards to Register entries, a link to the card(s) matched will appear
-on the person's corresponding page on baseball-reference.com.
+As a further stage, we have developed a methodology for efficiently capturing
+from newspapers boxscores, game logs, and identifying information on individual players.
+We use this methodology to fill in additional information for a league,
+especially for leagues where official averages were not published, or were sketchy
+or otherwise clearly unreliable.
+We produce updated versions of a league-season at the league-season level; this
+means that, until we have worked through a league-season completely, it is possible
+(and in some situations probable) that player lists or statistical totals
+for that league-season are incomplete.
 
 
-### Indexing player profiles
+## Person identification
 
-We have a number of career profiles of individual people which several researchers
-have generously provided to us.  For example, Bob McConnell allowed us in 2008
-to scan [his profiles of over 1300 major and minor league players](https://www.dropbox.com/sh/rntugcqba320uau/AAAVXoRuZ87axOS2R8MvMvr1a?dl=0).
-Reed Howard, our 19th century stalwart researcher, has produced an
-[extensive register of people from baseball's earlier years](/reports/howard).
-Likewise, similar types of career profiles appear in official media guides produced
-by teams and leagues.
+Players, managers, and other personnel are usually incompletely identified in
+published averages and in newspaper accounts.
+To link up each person's baseball career, and to fill in additional identifying
+and biographical details, we have developed a structured approach for establishing
+identification based on principles from records linkage, to develop the
+person identifications in the Chadwick Register.
 
-We are currently indexing and matching these to the Register.  In 2022 we are focusing
-first on researcher-produced profiles.  Our reasoning is that a researcher profiles a person
-because the person is of interest for some reason.  Therefore, it is more likely that a
-data user would also have an interest in that person's profile in our data, and so prioritising
-improving the quality of that data seems sensible.
+The backbone of our identification strategy is to link among several of the most
+comprehensive collections of information on people:
 
+* The _Sporting News_ contract cards, available on the LA84 Foundation's website,
+  contain useful data on players and other personnel active from about 1920 to 1980,
+  with some limited or sketchy information in the 1910s.
+  The content of the cards varies widely.  Some players who played just a few minor
+  league games (or were signed but never played at all) have very complete information,
+  while many with significant minor league careers have little information beyond
+  their name and a list of transactions.  We are finding that a majority of the cards
+  do have some information which is useful for improving our data quality.
+* Thanks to a partnership with Baseball Reference, we are indexing and abstracting
+  information from the questionnaires which have been scanned and are available on
+  ancestry.com.  These documents are quite useful for filling in basic biographical
+  details, and especially schools attended (which are rarely recorded systematically).
+* Thanks to Pete Palmer, we have an improved version of the person biographical table
+  from the Howe Sports Bureau, with coverage from the early 1980s to the early 2000s.
+* Stalwart 19th century baseball researcher Reed Howard has contributed an extensive
+  listing of the careers and biographical details for players and other personnel
+  from the 1860s through to the early 20th century, with source citations.
+  
+Taken together, the above give us coverage across all of baseball history.  We are
+now matching and cross-linking these listings with each other, as well as with the
+league averages we produced as described above.  This is a process which will take
+several years to complete fully, as there are several hundred thousand records to
+be transcribed and collated - for example, there are over 170,000 contract cards alone.
+In the meanwhile, an important output of the process is that we will be able to
+provide source links for more and more person entries.  For example,
+where we have linked a person to a contract card, Baseball Reference displays 
+link(s) to their corresponding card(s) on the person's page.
 
-### Player questionnaires
-
-For many years it was customary for data compilers to ask players to fill out standard
-questionnaires with biographical information.  Many of these have been collected and
-scanned, and are now available on ancestry.com.  In 2022 we are beginning a new index
-of these, linking and merging them to Register person entries.  We anticipate this will be
-an interesting data source: although the coverage is of a much smaller population than,
-for example, the contract cards, the information in them will be much more complete,
-especially as regards full names, dates and places of birth, and schools attended.
-
-
-### Data from outside baseball: The Lee Allen group
-
-Running in parallel to these, we are working with what we call the
-[Lee Allen group](/doc/leeallen).  This is an informal network of researchers who collect
+The person details we can glean from the above sources are often still incomplete.
+One of the achievements of the Macmillan Encyclopedia was not just getting historical
+statistics organised and checked, but also providing biographical details for players
+on a much more systematic basis.
+The core of that information was information that had been collected over the years
+by Lee Allen, who was the historian at the Hall of Fame in the 1960s and who had a
+special interest in knowing details about Major League players' lives outside of baseball.
+To collect this type of information for our Register, we have formed what we call the
+[Lee Allen group](/doc/leeallen), an informal network of researchers who collect
 data on baseball people using sources from outside baseball, including obituaries, vital
 records, and the like.  This group is responsible for reporting the passings of former
 players and personnel in near-real time.  In addition, once we have linked contract cards,
