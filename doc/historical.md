@@ -3,7 +3,7 @@ title: About historical minor league data
 ---
 
 At the moment, the data on professional baseball outside of the Major Leagues, as seen,
-for example, on baseball-reference.com, is a mashup which combines a  number of secondary
+for example, on baseball-reference.com, are a mashup which combines a  number of secondary
 datasets produced over the years by various researchers.
 Most of these datasets focused on information of interest to the researcher,
 and therefore their coverage was targeted to particular leagues, people, and/or types of
@@ -15,10 +15,10 @@ The resulting mashup is useful, but very incomplete.  The limited scope of each
 individual secondary dataset means there are many, many gaps in coverage.
 Furthermore, because the datasets were produced to solve a particular need for
 the researcher, and not necessarily to be part of a systematic encyclopedia,
-information on the provenance of specific datapoints varies significantly across
+information on the provenance of specific data values varies significantly across
 the datasets.  Although our experience is the information in our dataset is
 generally reliable when it is present, it is generally not possible to identify
-a primary source for most of it.  And, when a data point is null (or absent)
+a primary source for most of it.  And, when a data value is null (or absent)
 in our data, it is difficult to say whether this is because the information
 was not ever recorded, or simply was not recorded in one of the secondary
 datasets.
@@ -30,7 +30,7 @@ when they started to produce the dataset that became the original Macmillan
 Baseball Encyclopedia, and we are following a strategy which in many ways is
 the same as the one they adopted.
 We are going back to the most primary sources we can find, and building a
-new dataset "from scratch," where each datapoint is traceable back to
+new dataset "from scratch," where each data value is traceable back to
 a source.
 Of course, we are benefitting greatly from the massive progress that has been
 made in computer hardware, and in software for organising, transforming, and
@@ -55,8 +55,8 @@ disseminated.  We do this in a way that maintains continuity for all of
 the identifiers associated with people, leagues, teams, and so on, so
 this updating process should largely be transparent to users: over time, the
 quality of the data simply gets better.  The way to think about this
-process is that we are not "changing" or "editing" the legacy mashup
-data; we are **replacing it block by block**, with a new dataset that is
+process is that we are not "changing" or "editing" the data values from the legacy mashup;
+we are **replacing them block by block**, with a new dataset that is
 built directly from sources, and that we are able to improve iteratively
 going forward as we incorporate new sources of information.
 
@@ -110,7 +110,7 @@ comprehensive collections of information on people:
 
 * The _Sporting News_ contract cards, available on the LA84 Foundation's website,
   contain useful data on players and other personnel active from about 1920 to 1980,
-  with some limited or sketchy information in the 1910s.
+  with some limited or sketchy information from circa 1885 to 1919.
   The content of the cards varies widely.  Some players who played just a few minor
   league games (or were signed but never played at all) have very complete information,
   while many with significant minor league careers have little information beyond
