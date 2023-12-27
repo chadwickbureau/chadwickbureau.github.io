@@ -3,12 +3,13 @@ layout: default
 title: Home
 ---
 
-# Writing baseball history in tidy datasets
+# Chadwick Baseball Bureau
+## The baseball data scientists and historians
 
 <img src="assets/chadwick.jpg" align="left" style="padding: 1em;"/>
 **Chadwick Baseball Bureau** supports baseball professionals, analysts, and the broader
 research community by curating current and historical baseball data sources, and
-producing reproducible builds of datasets in tidy, standard formats.
+producing reproducible builds of datasets.
 We create value for our clients and for the community by allowing users to focus 
 on understanding and acting on information, rather than spending their time compiling
 and integrating it.
