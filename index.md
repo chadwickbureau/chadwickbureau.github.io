@@ -11,32 +11,49 @@ title: Home
 research community by curating current and historical baseball data sources, and
 producing reproducible builds of datasets.
 We create value for our clients and for the community by allowing users to focus 
-on understanding and acting on information, rather than spending their time compiling
-and integrating it.
+on understanding and acting on data, by efficiently handling data collection and
+integration at scale.
 
 We provide data to a number of high-profile clients across the industry, including being 
 a primary provider of historical statistical data for 
-[Baseball Reference](http://www.baseball-reference.com) 
-for major, minor, international, collegiate, and summer collegiate competitions.
+[Baseball Reference](http://www.baseball-reference.com) for major, minor, international, collegiate, and summer collegiate competitions.
 
+### From curation to compilation
 
-**For our professional clients**, we provide a range of data feeds, which we can
+As historians we place a high value on curating and organising source information.
+Further, in a digital world, statistics and other data can be ephemeral, especially as leagues and
+platforms come and go.  As an independent organisation, we work with leagues and platforms to
+improve the quality of their data, and to archive published information.
+We are therefore able to focus on **looking after history as a whole**, linking across
+countries, governing bodies, and levels of play, in the current season and across time.
+
+To get a flavour for our approach, you can read about how we are
+[building the comprehensive data resource on the history of the minor leagues](doc/historical).
+
+### For the community
+
+We provide a number of tools and resources on an Open Source/Open Data basis:
+
+  * The [Chadwick]([http://chadwick.sourceforge.net](https://github.com/chadwickbureau/chadwick)) tools for working
+    with [Retrosheet](http://www.retrosheet.org) data.
+  * A [repository](https://github.com/chadwickbureau/retrosheet) with a version of the data released by
+    [Retrosheet](https://www.retrosheet.org), patched with known corrections.  For convenience, we also provide
+    [splits and day-by-days](https://github.com/chadwickbureau/retrosplits) extracted from the Retrosheet corpus.
+  * The [Chadwick persons register](https://github.com/chadwickbureau/retrosheet), which has nearly 500k entries
+    for people who have played, managed, umpired, or otherwise been involved in baseball.  This includes personnel
+    from North American-based professional leagues back to the 19th century,
+    as well as personnel from leagues around the world and college baseball.
+    The public version of the Register also facilitates linked data by reporting cross-references against several
+    major ID systems; more detailed cross-references are available to our partners on a subscription basis.
+
+### How can we help you?
+
+We provide a range of data feeds, which we can
 customise in terms of scope, frequency, and delivery format to suit your needs.
+For more information, contact Dr T L Turocy, on ted (dot) turocy (at) gmail (dot) com.
 
-<!---
-
-**To support the community** and encourage the development and use of common standards
-for baseball information, we provide a number of
-[datasets and tools released under Open Data and Open Source terms](http://chadwick-bureau.com/open-data/).
-These include:
-
-  * The [Chadwick](http://chadwick.sourceforge.net) tools for manipulating baseball play-by-play data, which are compatible with and extend the DiamondWare tools provided by [Retrosheet](http://www.retrosheet.org). The software is released under the GNU General Public License.
-  * A [git repository](http://github.com/chadwickbureau/retrosheet) with a version of the data released by [Retrosheet](http://www.retrosheet.org), patched with known corrections.
-  * A [cross-reference register](http://chadwick-bureau.com/the-register "The register") of all players, managers, and umpires known to have participated in professional baseball, as well as college players and others with off-field involvement in pro ball, with identifiers in many major ID systems.
---->
+### Staying in touch
 
 For the latest news on our data and software releases, and commercial products,
 follow us on Twitter at [@chadwickbureau](http://twitter.com/chadwickbureau "@chadwickbureau on twitter")
 and like us on [Facebook as chadwickbureau](https://www.facebook.com/pages/Chadwick-Baseball-Bureau/228272460709358).
-
-**For enquiries about our services**, contact the Bureau's principal, Dr T L Turocy, on ted (dot) turocy (at) gmail (dot) com.
