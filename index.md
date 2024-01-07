@@ -34,7 +34,7 @@ To get a flavour for our approach, you can read about how we are
 
 We provide a number of tools and resources on an Open Source/Open Data basis:
 
-  * The [Chadwick]([http://chadwick.sourceforge.net](https://github.com/chadwickbureau/chadwick)) tools for working
+  * The [Chadwick](https://github.com/chadwickbureau/chadwick) tools for working
     with [Retrosheet](http://www.retrosheet.org) data.
   * A [repository](https://github.com/chadwickbureau/retrosheet) with a version of the data released by
     [Retrosheet](https://www.retrosheet.org), patched with known corrections.  For convenience, we also provide
