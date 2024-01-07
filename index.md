@@ -39,7 +39,7 @@ We provide a number of tools and resources on an Open Source/Open Data basis:
   * A [repository](https://github.com/chadwickbureau/retrosheet) with a version of the data released by
     [Retrosheet](https://www.retrosheet.org), patched with known corrections.  For convenience, we also provide
     [splits and day-by-days](https://github.com/chadwickbureau/retrosplits) extracted from the Retrosheet corpus.
-  * The [Chadwick persons register](https://github.com/chadwickbureau/retrosheet), which has nearly 500k entries
+  * The [Chadwick persons register](https://github.com/chadwickbureau/register), which has nearly 500k entries
     for people who have played, managed, umpired, or otherwise been involved in baseball.  This includes personnel
     from North American-based professional leagues back to the 19th century,
     as well as personnel from leagues around the world and college baseball.
