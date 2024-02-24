@@ -3,7 +3,7 @@ title: About historical minor league data
 ---
 
 At the moment, the data on professional baseball outside of the Major Leagues, as seen,
-for example, on baseball-reference.com, are a mashup which combines a  number of secondary
+for example, on baseball-reference.com, are a mashup which combines a number of secondary
 datasets produced over the years by various researchers.
 Most of these datasets focused on information of interest to the researcher,
 and therefore their coverage was targeted to particular leagues, people, and/or types of
@@ -17,7 +17,7 @@ Furthermore, because the datasets were produced to solve a particular need for
 the researcher, and not necessarily to be part of a systematic encyclopedia,
 information on the provenance of specific data values varies significantly across
 the datasets.  Although our experience is the information in our dataset is
-generally reliable when it is present, it is generally not possible to identify
+generally reliable when it is present, it is usually not possible to identify
 a primary source for most of it.  And, when a data value is null (or absent)
 in our data, it is difficult to say whether this is because the information
 was not ever recorded, or simply was not recorded in one of the secondary
@@ -90,9 +90,9 @@ from newspapers boxscores, game logs, and identifying information on individual 
 We use this methodology to fill in additional information for a league,
 especially for leagues where official averages were not published, or were sketchy
 or otherwise clearly unreliable.
-We produce updated versions of a league-season at the league-season level; this
+We produce updated versions of a league-season at the league-season level. This
 means that, until we have worked through a league-season completely, it is possible
-(and in some situations probable) that player lists or statistical totals
+- and in many situations probable - that player lists or statistical totals
 for that league-season are incomplete.
 
 
@@ -102,11 +102,21 @@ Players, managers, and other personnel are usually incompletely identified in
 published averages and in newspaper accounts.
 To link up each person's baseball career, and to fill in additional identifying
 and biographical details, we have developed a structured approach for establishing
-identification based on principles from records linkage, to develop the
-person identifications in the Chadwick Register.
+identification based on principles from records linkage.
+The output of our work forms the [Chadwick Register](https://github.com/chadwickbureau/register),
+the most comprehensive collection of identifications of baseball people.
 
-The backbone of our identification strategy is to link among several of the most
-comprehensive collections of information on people:
+An entry in the Register is a collection (or "cluster") of references to records and mentions
+of people in source data, linked together by matching on information in the
+respective sources.  As we are able to link more and more source records into
+clusters, we increase the amount of information we can present about people, as
+well as our confidence in the likely accuracy of that information.
+
+There is an enormous amount of historical material available, including
+published material and official documents - far more than there's the capacity
+to capture and link.  We therefore have developed a strategy which maximises
+the rate at which we can incorporate new information efficiently, largely by
+working systematically through certain types of source material.  These include:
 
 * The _Sporting News_ contract cards, available on the LA84 Foundation's website,
   contain useful data on players and other personnel active from about 1920 to 1980,
@@ -126,16 +136,6 @@ comprehensive collections of information on people:
   listing of the careers and biographical details for players and other personnel
   from the 1860s through to the early 20th century, with source citations.
   
-Taken together, the above give us coverage across all of baseball history.  We are
-now matching and cross-linking these listings with each other, as well as with the
-league averages we produced as described above.  This is a process which will take
-several years to complete fully, as there are several hundred thousand records to
-be transcribed and collated - for example, there are over 170,000 contract cards alone.
-In the meanwhile, an important output of the process is that we will be able to
-provide source links for more and more person entries.  For example,
-where we have linked a person to a contract card, Baseball Reference displays 
-link(s) to their corresponding card(s) on the person's page.
-
 The person details we can glean from the above sources are often still incomplete.
 One of the achievements of the Macmillan Encyclopedia was not just getting historical
 statistics organised and checked, but also providing biographical details for players
@@ -143,7 +143,7 @@ on a much more systematic basis.
 The core of that information was information that had been collected over the years
 by Lee Allen, who was the historian at the Hall of Fame in the 1960s and who had a
 special interest in knowing details about Major League players' lives outside of baseball.
-To collect this type of information for our Register, we have formed what we call the
+To collect this type of information for our Register, we have convened the
 [Lee Allen group](/doc/leeallen), an informal network of researchers who collect
 data on baseball people using sources from outside baseball, including obituaries, vital
 records, and the like.  This group is responsible for reporting the passings of former
@@ -151,6 +151,26 @@ players and personnel in near-real time.  In addition, once we have linked contr
 profiles, or questionnaires to Register people, but information on them is still missing,
 they have a go at seeing if they can find information from other sources to fill out
 demographics in the Register.
+
+As we progress with the records linkage process, as part of the
+[Register](https://github.com/chadwickbureau/register) we will make available
+information about the records in each person's identity cluster.
+This includes references to person IDs in other systems, such as MLBAM
+and Wikidata.  It also includes references to other source materials which are
+not necessarily one-to-one with people; for example, we provide references
+to TSN contract cards and findagrave.com memorials.
+
+Reconstructing correct identifications of people from historical records can
+be tricky, given the incompletness, ambiguity, and sometimes downright inaccuracy
+of records.  The documentation of the Register outlines our technical approach,
+including how Chadwick person cluster identifiers evolve to reflect our
+constantly-improving understanding.  Our objective is to optimise the
+rate we are able to improve the overall quality of the composite data we
+provide.  Therefore, it's not *per se* our objective, in the short run, for
+any of those cross-references to be comprehensive.  For example, we have linked
+only around 15% of the TSN contract cards to date.  It will be quite some time
+before this approaches full linkage, as we prioritise matching cards which help
+the most in improving the biographical and career data that people see.
 
 
 ## Summary
