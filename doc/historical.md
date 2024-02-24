@@ -91,8 +91,8 @@ We use this methodology to fill in additional information for a league,
 especially for leagues where official averages were not published, or were sketchy
 or otherwise clearly unreliable.
 We produce updated versions of a league-season at the league-season level. This
-means that, until we have worked through a league-season completely, it is possible
-- and in many situations probable - that player lists or statistical totals
+means that, until we have worked through a league-season completely, it is possible,
+and in many situations probable, that player lists or statistical totals
 for that league-season are incomplete.
 
 
